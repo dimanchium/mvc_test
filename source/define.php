@@ -10,8 +10,8 @@
 	define("DB_TYPE", "pgsql");
 	define("DB_HOST", "localhost");
 	define("DB_NAME", "mvc_test");
-	define("DB_USER", "postgres");
-	define("DB_PASS", "postgres");
+	define("DB_USER", "pg_user");
+	define("DB_PASS", "pg_pass");
         
 	//время хранения сессии
 	define("SESSION_MAXLIFETIME", 10800);
