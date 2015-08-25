@@ -1,0 +1,6 @@
+/*
+  Стили для IE
+*/
+
+#error-message { display: block; }
+#container { display: none; }    

@@ -1,0 +1,71 @@
+/*
+  Стили для авторизации
+*/
+
+#eu
+{
+        margin: 100px auto auto auto;
+        width: 250px;
+        font-size: 18px;
+        background: #5061A4;
+        color: white;
+        padding: 10px;
+        width: 330px;
+        height: 30px;
+	text-align: center;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+}
+
+#eu img { margin-right: 15px; }
+
+#eu img, #eu span { display: inline-block; vertical-align: middle }
+   
+#auth_form 
+{
+        width: 300px;
+        margin: auto;
+        background: blue;
+        padding: 5px 25px 15px 25px;
+        background: #7182c7;
+        color: white;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+}
+
+#auth_form h2 
+{ 
+        text-align:center;
+} 
+    
+#auth_form input 
+{
+        display: block;
+        margin: auto auto 10px auto;
+        font-size: 16px;
+}
+    
+#auth_form input[type="text"]
+{
+        width: 230px;
+        text-align: center;
+}
+    
+#auth_form input[type="submit"]
+{
+        width: 100px;
+        margin: 10px auto;
+}
+           
+#auth_error
+{
+        font-size: 15px;
+        color: white;
+        background: #FD7373;
+        padding: 10px;
+        margin: 10px auto auto auto;
+        width: 330px;
+        border-radius: 15px;
+	text-align: justify;
+}
+     

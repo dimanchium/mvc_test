@@ -1,0 +1,109 @@
+/*
+Стили для модуля "Производственный календарь"
+*/
+
+#calendar 
+{
+        border-spacing: 1px;
+        color: #ffffff;
+        display: inline-block;
+        font-size: 15px;
+        font-weight: bolder;
+	padding: 0; 
+        text-align: center;
+        vertical-align: top;
+}
+
+#calendar th
+{            
+        background: #0964bc;
+        padding: 15px;
+        font-family: Tahoma,Arial,Helvetica,sans-serif;
+        font-size: 16px;
+        text-align: center;
+}
+
+#calendar td
+{
+         padding: 15px 25px 15px 25px;
+}
+
+#calendar th div
+{
+        display: inline-block;
+        margin: 0 3px 0 3px;
+}
+
+#calendar #month { width: 90px; }
+
+#calendar #next_month { margin-right: 25px; }
+
+#calendar th div 
+{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#calendar #day_of_week th
+{
+        background: #a1bbcc;
+        padding: 8px 15px 8px 15px;
+        font-size: 14px;
+}
+
+#calendar #day_of_week th.holiday
+{
+        background: #ff3333;
+}
+
+#calendar .week td
+{
+        background-color: #eee;
+}
+
+#calendar .week td.workday
+{
+        background-color: #c4d9d8; 
+}
+
+#calendar .week td.holiday
+{
+        background-color: #ff6666; 
+}
+
+#calendar-save
+{
+	display: block;
+        padding: 2px 135px;
+	margin: 10px auto;
+}
+
+#calendar tr.week td:not(:empty), #next_month, #month, #previous_month,
+#next_year, #year, #previous_year
+{
+        cursor: pointer;
+	position: relative;
+}
+
+#calendar tr.week td:not(:empty)[data-title] {
+	position: relative; 
+}
+
+/*Всплывающая подсказка*/
+#calendar tr.week td:not(:empty)[data-title]:hover::after {
+	content: attr(data-title); 
+	position: absolute; 
+    	z-index: 5; 
+    	background: #f4f4f4;
+    	color: black;
+    	padding: 2px;
+    	left: -22px; right: -22px; bottom: 30px; 
+    	font-size: 10pt;
+    	font-weight: normal; 
+    	border: 1px solid #333; 
+    	border-radius: 5px;
+}

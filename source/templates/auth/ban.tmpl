@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Бан</title>
+        <meta charset="utf-8">
+        <!--jQuery-->
+        <link rel="stylesheet" type="text/css" href="js/jquery-ui/jquery-ui.css"> 
+        <link rel="stylesheet" type="text/css" href="js/jquery-ui/jquery-ui.theme.css"> 
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/jquery-ui/jquery-ui.min.js"></script>
+        <!---->
+        <script>
+            $(function() {
+                $("#dialog-ban-message").dialog({});
+            });
+        </script>
+
+    </head>
+    <body>
+        <div id="dialog-ban-message" title="Доступ по данному ip-адресу заблокирован">
+            <p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 30px 0;"></span>Доступ по данному ip-адресу заблокирован до {date}</p>
+        </div>
+    </body>
+</html>

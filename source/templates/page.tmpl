@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--[if IE]><link href="css/main/ie.css" rel="stylesheet" type="text/css"><![endif]-->
+    <!--jQuery-->
+    <link rel="stylesheet" type="text/css" href="js/jquery-ui/jquery-ui.css"> 
+    <link rel="stylesheet" type="text/css" href="js/jquery-ui/jquery-ui.theme.css"> 
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery-ui/jquery-ui.min.js"></script>
+    <!---->
+    {styles}
+    {js_scripts}
+    <title>{title}</title>
+  </head>
+  <body>
+    <div id="error-message">К сожалению, данная версия приложения не работает на всех версиях Internet Explorer. Пользуйтесь, пожалуйста, Firefox, Chrome или Opera.</div>
+    <div id="container">
+      <header>
+	<div id="top-header"><img src="img/logo.png" height="48" alt=""><span>Тестовая система</span></div>
+	<div id="bottom-header">Вы зашли под пользователем <i>{user}</i>
+        <form method="post"><input type="submit" name="auth_exit" value="Выйти"></form>
+        </div>
+      </header>
+      <nav>
+        <div id="nav-menu">
+          {nav_menu}
+        </div>
+      </nav>
+      <section>
+        <div id="title">{module_title}</div>
+        <div id="content">{module_content}</div>
+      </section>
+      <footer>Тест</footer>
+    </div> 
+  </body>
+  
+</html>
+

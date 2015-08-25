@@ -1,0 +1,134 @@
+/*
+Глобальные стили
+*/
+
+/*Основное офрмление*/
+body {
+	font: 10pt Arial, Helvetica, sans-serif; 
+	background: #c4cedc;
+	height: 100%;
+}
+/**/
+
+/*Сообщение с ошибкой для IE*/
+#error-message {
+ 	font-size: 22px;
+  	font-weight: bold;
+  	margin: 20px;
+ 	display: none;
+}
+#container {
+  	width: 80em; 
+  	margin: 5% auto; 
+  	background: #dfdfdf; 
+  	border-radius: 10px;
+}
+/**/
+
+/*Верхняя часть страницы*/
+header {
+  	display: block; 
+  	padding: 5px; 
+  	background: #5061A4; 
+  	border-radius: 10px 10px 0 0;
+}
+#top-header {
+	color: white;
+  	font-size: 20px;
+  	font-weight: bold;
+	display: inline-block;
+	width: 55%;
+}
+#top-header img, #top-header span { 
+	display: inline-block;
+	vertical-align: middle;
+	margin: 8px 10px 8px 10px; 
+}
+#bottom-header {
+	display: inline-block;
+	color: white;
+	font-family: bold;
+	width: 42%;
+	text-align: right;
+	vertical-align: -10px;
+}
+#bottom-header form {
+        display: inline-block;
+}
+#bottom-header i {
+	font-size: 16px;
+        font-weight: bold;
+        margin: 0 15px 0 5px;
+}
+#bottom-header input {
+	border: 1px none;
+	border-radius: 3px;
+    	font-size: 12px;
+        padding: 2px 10px;
+}
+/**/
+
+/*Меню навигации*/
+nav {
+	margin-top: 10px; 
+	width: 110px;  
+	padding: 0 10px 10px 0;  
+	float: left;  
+}
+
+#nav-menu a {
+        text-decoration: none;
+}
+
+#nav-menu #module {
+	padding: 16px 0 16px 0;
+	width: 190px;
+	margin-top: 0;
+	margin-bottom: 10px;
+  	font-family: Geneva, Arial, Helvetica, sans-serif;
+  	text-align: center;
+  	color: white;
+  	background: #7182c7;
+  	font-weight: bold;
+  	font-size: 14px;
+  	cursor: pointer;
+}
+
+#nav-menu #module.active {
+	background: #1365a5;
+}
+
+/**/
+
+/*Основной блок с модулем*/
+section {
+  	display: block; 
+  	margin-left: 190px; 
+  	padding: 16px; 
+  	background: #ffffff; 
+  	min-height: 550px;
+  	font-size: 14px;
+}
+section #title {
+  	font-size: 17px;
+  	font-weight: bolder;
+  	margin: 5px 15px 5px 10px;
+        text-align: center;
+}
+section #content { 
+	margin: 10px 10px 5px 10px;
+	text-align: center;
+}
+/**/
+
+/*Нижняя часть*/
+footer {
+  	text-align: right; 
+  	display: block; 
+  	background: #5061A4; 
+  	color: #ffffff; 
+  	padding: 5px 15px 5px 5px; 
+  	height: 20px;
+  	border-radius: 0 0 10px 10px;
+}
+/**/
